@@ -3,8 +3,6 @@
 import Image from 'next/image';
 import data from './data.json'
 
-import { FixedSizeGrid as Grid } from "react-window";
-
 import Grok from './images/grok.png'
 import { useState } from 'react';
 
