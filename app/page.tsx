@@ -33,13 +33,10 @@ export default function Home() {
         </div>
 
         <div className='grid md:grid-cols-6 grid-cols-3 w-full container gap-4'>
-          <div className='flex flex-col gap-4 items-center'>
-            <img src="https://abs.twimg.com/grok-finance-cards/crypto/Vine/png/logo" width={200} height={200} />
-            Vine
-          </div>
+
           {paginatedData.map(([key, value]) => (
             <div key={key} className="flex flex-col items-center">
-              <img src={value} alt={key} width={150} height={150} />
+              <Image src={value} alt={key} width={150} height={150} />
               <span>{key}</span>
             </div>
           ))}
